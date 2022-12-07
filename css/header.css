@@ -1,0 +1,150 @@
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: #fff;
+    min-height: 120px;
+    max-height: 120px;
+    z-index: 500;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+header .container {
+    position: relative;
+    z-index: 61;
+}
+
+#top_header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+#top_header li {
+    margin-left: 10px;
+}
+#top_header li:first-child {
+    margin-left: 0;
+}
+
+#top_header li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+}
+
+#top_header li:first-child a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    margin-top: 3px;
+}
+
+/* //top_header */
+
+#bottom_header{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 70px;
+    margin-top: 10px;
+}
+
+#bottom_header h1 {
+}
+
+#bottom_header h1 a img {
+    width: 100%;
+}
+
+#bottom_header #left_menu {
+    gap: 90px;
+    display: flex;
+    list-style: none;
+}
+
+#bottom_header #left_menu>li{
+    margin-right: 10px;
+    position: relative;
+}
+
+#bottom_header #left_menu>li>a{
+    text-decoration: none;
+    font-size: 17px;
+    color : #333;
+    transition: .2s;
+}
+
+#bottom_header #left_menu>li>a:hover{
+    color:#023e87;
+    font-weight: bold;
+}
+
+#bottom_header #right_menu {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+}
+
+#bottom_header #right_menu>li{
+    margin-right: 10px;
+}
+
+#bottom_header #right_menu>li>a{
+    text-decoration: none;
+    font-size: 17px;
+    color : #333;
+    transition: .2s;
+}
+
+#bottom_header #right_menu>li>a:hover{
+    color:#023e87;
+    font-weight: bold;
+}
+
+
+.sub-menu {
+    display: none;
+    width: 140px;
+    position: absolute;
+    top: 70px;
+    z-index: 61;
+}
+
+.sub-menu li {
+    padding: 10px 0;
+}
+
+.sub-menu li a {
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    transition: .1s;
+}
+
+.sub-menu li a:hover {
+    border-bottom: 1px solid #023e87;
+}
+
+#sub-menu-bg {
+    display: none;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    position: fixed;
+    top:120px;
+    left:0;
+    z-index: 60;
+}
+
+#small-menu {
+    display: none;
+}
+
+#small_menus {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}

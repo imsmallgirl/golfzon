@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding-top: 120px;
+    color: #333;
+    height: 100%;
+}
+
+ul {
+    list-style : none;
+}
+
+a {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color:#333;
+    margin-bottom: 10px;
+}
+
+.tit_text {
+    font-size: 18px;
+    color: #333;
+    font-weight: 300;
+}
+
+:root {
+    --Iconsax-Size:20px;
+    --Iconsax-Color:#333;
+}
+
+/* scroll event */
+
+@-webkit-keyframes app-menu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes under-up {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes scaleFadeIn{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#golf-brands .scroll li img{
+    animation: scaleFadeIn 1s forwards;
+}
+
+#golf-brands #golf-brand li img{
+    opacity: 0;
+}
+
+/* golfzon-screens scroll event */
+
+#golfzon-screens .scroll h2{
+    animation: scaleFadeIn 1s forwards;
+}
+
+#golfzon-screens h2 {
+    opacity: 0;
+}
+
+#golfzon-screens .scroll p{
+    animation: scaleFadeIn 1s .5s forwards;
+}
+
+#golfzon-screens p {
+    opacity: 0;
+}
+
+#golfzon-screens .scroll #screens-items dl {
+    animation: under-up 1s 1s forwards;
+}
+
+#golfzon-screens #screens-items dl {
+    opacity: 0;
+}
+
+/* new-course scroll event */
+
+#new-course .scroll #course-head h2 {
+    animation: scaleFadeIn 1s forwards;
+}
+
+#new-course #course-head h2{
+    opacity: 0;
+}
+
+#new-course .scroll #course-head p {
+    animation: scaleFadeIn 1s .5s forwards;
+}
+
+#new-course #course-head p{
+    opacity: 0;
+}
+
+#new-course .scroll #course-slider-btn li{
+    animation: fadein 2s 1s forwards;
+}
+
+#new-course #course-slider-btn li {
+    opacity: 0;
+}
+
+#new-course .scroll #course-contents .course{
+    animation: under-up 1.5s 1.2s forwards;
+}
+
+#new-course #course-contents .course {
+    opacity: 0;
+}
+
+/* mid-banner scroll event */
+
+#mid-banner.scroll {
+    animation: fadein 2s forwards;
+}
+
+#mid-banner{
+    opacity: 0;
+}
+
+/* golfzon-app scroll event */
+
+#golfzon-app .scroll #app-imgs li #appTexts{
+    animation: under-up 1s forwards;
+}
+
+#golfzon-app #app-imgs li #appTexts {
+    opacity: 0;
+}
+
+#golfzon-app .scroll #app-imgs li #appImgs, #golfzon-app .scroll #app-imgs li #app-tab{
+    animation: under-up 1s .5s forwards;
+}
+
+#golfzon-app #app-imgs #appImgs, #golfzon-app #app-imgs #app-tab {
+    opacity: 0;
+}
+
+#golfzon-app .scroll #app-menu .app-menu-head{
+    animation: under-up 1s forwards;
+}
+
+#golfzon-app #app-menu .app-menu-head{
+    opacity: 0;
+}
+
+#golfzon-app .scroll #app-menu #app-menus{
+    animation: under-up 1s .5s forwards;
+}
+
+#golfzon-app #app-menu #app-menus{
+    opacity: 0;
+}
+
+/* golfzon-tour scroll event */
+
+#golfzon-tour .scroll #tour-head h2 {
+    animation: scaleFadeIn 1s forwards;
+}
+
+#golfzon-tour #tour-head h2{
+    opacity: 0;
+}
+
+#golfzon-tour .scroll #tour-head p {
+    animation: scaleFadeIn 1s .5s forwards;
+}
+
+#golfzon-tour #tour-head p{
+    opacity: 0;
+}
+
+#golfzon-tour .scroll #tour-tab {
+    animation: under-up 1s .8s forwards;
+}
+
+#golfzon-tour #tour-tab {
+    opacity: 0;
+}
+
+#golfzon-tour .scroll #tour-contents {
+    animation: under-up 1s 1s forwards;
+}
+
+#golfzon-tour #tour-contents {
+    opacity: 0;
+}
+
+/* golfzon-event scroll event */
+
+#golfzon-event .scroll #event-head h2{
+    animation: scaleFadeIn 1s forwards;
+}
+
+#golfzon-event #event-head h2 {
+    opacity: 0;
+}
+
+#golfzon-event .scroll #event-head p{
+    animation: scaleFadeIn 1s .5s forwards;
+}
+
+#golfzon-event #event-head p{
+    opacity: 0;
+}
+
+#golfzon-event .scroll #event-notice #event, #golfzon-event .scroll #event-notice #notice {
+    animation: under-up 1s .8s forwards;
+}
+
+#event, #notice{
+    opacity: 0;
+}
+
+/* new course hover */
+
+#new-course #course-contents .on-course{
+    background: linear-gradient(180deg, #006eb7, rgba(0, 110, 183,0.2));
+    color: #fff;
+    transition: all .3s;
+}
+
+#new-course #course-contents .on-course #course-tit dt span{
+    color: #fff;
+    border-color: #fff;
+}
+
+#new-course #course-contents .on-course p {
+    color:#fff;
+}
+
+/* course slider btn hover */
+
+#new-course #course-slider-btn li:hover{
+    background-color: rgba(0, 110, 183);
+    transition: all .3s;
+}
+
+#new-course #course-contents {
+    transition: all .5s;
+}
+
+
+/* app js */
+
+.app_none {
+    display: none;
+}
+
+#golfzon-app #app-menu #app-menus .menu-on {
+    background: linear-gradient(180deg, #006eb7, rgba(0, 110, 183,0.2));
+    color: #fff;
+    --Iconsax-Color:#fff;
+}
+
+#golfzon-app #app-imgs{
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+#golfzon-app #app-imgs .app{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+}
+
+#golfzon-app #app-imgs .app-show {
+    display: block;
+    animation: fadein .5s forwards;
+}
+
+#golfzon-app #app-imgs #app-tab li.app_on {
+
+    background-color: #333;
+
+}
+
+#golfzon-app #app-imgs .app #appImgs li{
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* event */
+
+#event #event-imgs li.event-off {
+    display: block;
+}
+
+/* tour */
+
+#golfzon-tour #tour-wrap #tour-contents{
+    display: none;
+}
+
+#golfzon-tour #tour-wrap #tour-contents.tour-on {
+    display: flex;
+}
+
+#golfzon-tour #tour-tab li.tour_on {
+    position: relative;
+    font-weight: 500;
+}
+
+#golfzon-tour #tour-tab li.tour_on::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #006eb7;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    animation: tour_on .3s forwards;
+}
+
+@keyframes tour_on {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

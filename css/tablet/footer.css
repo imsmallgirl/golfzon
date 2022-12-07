@@ -1,0 +1,117 @@
+footer {
+    max-height: 500px;
+
+    padding: 50px 30px;
+    background-color: #f9f9f9;
+}
+
+#footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer-menu li a{
+    font-size: 14px;
+    color: #4d4d4d;
+}
+
+#footer-bottom {
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    color:#4d4d4d;
+}
+
+#footer-left dl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#footer-left dl dt {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 0;
+    text-align: center;
+}
+
+#footer-left dl dd {
+    text-align: center;
+    font-size: 14px;
+    color:#666;
+}
+
+#footer-left dl:last-of-type dd {
+    margin-left: 0px;
+}
+
+#footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#footer-right #footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-right #footer-info li {
+    margin: 0 10px;
+}
+
+#footer-right #footer-info li select {
+    padding: 3px 0;
+    padding-right: 50px;
+    padding-left: 5px;
+    border: 1px solid rgba(77, 77, 77, .2);
+    border-radius: 5px;
+    color : #4d4d4d;
+}
+
+#footer-right #footer-info li button {
+    padding: 3px 10px;
+    border: 1px solid rgba(77, 77, 77, .2);
+    border-radius: 5px;
+    color : #4d4d4d;
+    background-color: #fff;
+}
+
+#footer-right #footer-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-right #footer-btn li {
+    margin: 0 10px;
+}
+
+#footer-right #footer-btn li button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fff;
+}
+
+#copyright {
+    font-size: 8px;
+    text-align: center;
+    color: #777;
+}

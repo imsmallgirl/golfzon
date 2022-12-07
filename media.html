@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>골프존 | 미디어 | 베스트 나스모</title>
+    <link rel="stylesheet" href="css/common.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://glenthemes.github.io/iconsax/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="css/header.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="css/footer.css" media="screen and (min-width:1024px)">
+
+    <link rel="stylesheet" href="css/tablet/main.css" media="screen and (min-width:678px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/tablet/header.css" media="screen and (min-width:678px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/tablet/footer.css" media="screen and (min-width:678px) and (max-width: 1024px)">
+
+    <link rel="stylesheet" href="css/mobile/main.css" media="screen and (max-width:678px)">
+    <link rel="stylesheet" href="css/mobile/header.css" media="screen and (max-width:678px)">
+    <link rel="stylesheet" href="css/mobile/footer.css" media="screen and (max-width:678px)">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul id="top_header">
+                <li><a href="#" class="xi-user-o"></a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <!-- //top_header -->
+            <div id="bottom_header">
+                <button id="small-menu" class="xi-bars"></button>
+                <ul id="left_menu">
+                    <li><a href="/record.html">나의 기록실</a>
+                        <ul class="sub-menu">
+                            <li><a href="/record.html">스코어 카드</a></li>
+                            <li><a href="#">나의 나스모</a></li>
+                            <li><a href="#">나의 랭킹</a></li>
+                            <li><a href="#">트로피 진열장</a></li>
+                            <li><a href="#">홀인원 기록실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/media.html">미디어</a>
+                        <ul class="sub-menu">
+                            <li><a href="/media.html">베스트 나스모</a></li>
+                            <li><a href="#">스크린 골프존</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">대회</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">G-TOUR</a></li>
+                            <li><a href="#">골프존 파크 대회</a></li>
+                            <li><a href="#">대회 안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <h1><a href="/"><img src="images/header_logo.png" alt="골프존로고"></a></h2>
+                <ul id="right_menu">
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">코스소개</a></li>
+                    <li><a href="#">필드부킹</a></li>
+                </ul>
+            </div>
+            <!-- //bottom_header -->
+        </div>
+        <!-- // container -->
+        <div id="small_menus">
+            <div id="small_menu_container">
+                <ul id="small_menu_contents">
+                    <li>
+                        <a href="#" class="small-sub-tit">나의 기록실<span class="xi-angle-down-min"></span></a>
+                        <ul class="small_sub_menu">
+                            <li><a href="/record.html">스코어 카드</a></li>
+                            <li><a href="#">나의 나스모</a></li>
+                            <li><a href="#">나의 랭킹</a></li>
+                            <li><a href="#">트로피 진열장</a></li>
+                            <li><a href="#">홀인원 기록실</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="small-sub-tit">미디어<span class="xi-angle-down-min"></span></a>
+                        <ul class="small_sub_menu">
+                            <li><a href="./media.html">베스트 나스모</a></li>
+                            <li><a href="#">스크린 골프존</a></li>
+                        </ul>
+                    </li>
+                    <li>                   
+                        <a href="#" class="small-sub-tit">대회<span class="xi-angle-down-min"></span></a>
+                        <ul class="small_sub_menu">
+                            <li><a href="#">G-TOUR</a></li>
+                            <li><a href="#">골프존 파크 대회</a></li>
+                            <li><a href="#">대회 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                    </li>
+                    <li>
+                        <a href="#">코스소개</a>
+                    </li>
+                    <li>
+                        <a href="#">필드부킹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <div id="sub-menu-bg"></div>
+    <main>
+        <section id="record_header">
+            <dl id="record_sub_header">
+                <dt>베스트 나스모</dt>
+                <dd id="record_subTit">오늘의 베스트</dd>
+            </dl>
+            <ul id="record_tabs">
+                <li class="record_tab_on">오늘의 베스트</li>
+                <li>주간 베스트</li>
+            </ul>
+        </section>
+        <section id="best-info">
+            <div class="container">
+                <dl id="best-info-tit">
+                    <dt>오늘의 베스트 영상을<br> 확인해보세요!</dt>
+                    <dd>
+                        나의 최고 스윙 영상을 공유하고,<br> 유저들과 소통하며 실력을 향상시켜봐요!
+                    </dd>
+                </dl>
+                <ul id="best-info-contents">
+                    <li>
+                        <p><img src="images/crown-icons.png" alt=""></p>
+                        <dl>
+                            <dt>베스트</dt>
+                            <dd>
+                                베스트 피드에 공유된
+                                나스모 기준으로 선정해요!
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p><img src="images/chat-icons.png" alt=""></p>
+                        <dl>
+                            <dt>댓글</dt>
+                            <dd>
+                                영상에 대한 의견을 댓글로 남겨봐요!
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p><img src="images/heart-icons.png" alt=""></p>
+                        <dl>
+                            <dt>좋아요</dt>
+                            <dd>
+                                유저들의 영상을 보고, 좋아요를 눌러봐요!
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <p><img src="images/views-icons.png" alt=""></p>
+                        <dl>
+                            <dt>조회수</dt>
+                            <dd>
+                                조회수가 높을수록, 베스트 나스모에 올라요!
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="best-video">
+            <div class="container">
+                <dl id="best-video-tit">
+                    <dt>오늘의 베스트</dt>
+                    <dd>2022.11.17 목요일</dd>
+                </dl>
+                <ul id="best-video-genders">
+                    <li class="gender-on">여</li>
+                    <li>남</li>
+                </ul>
+                <ul id="best-video-cards" class="bestVideoCards">
+                    <li>
+                        <div class="best-videos">
+                            <video src="https://nasmothumbnail.golfzon.com/new/2022/01/02/15/01/223017_20220102150142_T0.mp4"></video>
+                            <button class="xi-play-circle-o"></button>
+                        </div>
+                        <dl class="best-video-card">
+                            <dt>유저 1</dt>
+                            <dd>
+                                2022.11.17
+                            </dd>
+                            <dd>
+                                <table>
+                                    <tr>
+                                        <th>드라이버</th>
+                                        <td>204.0m</td>
+                                    </tr>
+                                    <tr>
+                                        <th>모드</th>
+                                        <td>루키</td>
+                                    </tr>
+                                    <tr>
+                                        <th>구질</th>
+                                        <td>슬라이스</td>
+                                    </tr>
+                                </table>
+                            </dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="best-videos">
+                            <video src="https://nasmothumbnail.golfzon.com/new/2022/11/09/22/25/3531634_20221109222541.mp4"></video>
+                            <button class="xi-play-circle-o"></button>
+                        </div>
+                        <dl class="best-video-card">
+                            <dt>유저 2</dt>
+                            <dd>
+                                2022.11.17
+                            </dd>
+                            <dd>
+                                <table>
+                                    <tr>
+                                        <th>드라이버</th>
+                                        <td>204.0m</td>
+                                    </tr>
+                                    <tr>
+                                        <th>모드</th>
+                                        <td>루키</td>
+                                    </tr>
+                                    <tr>
+                                        <th>구질</th>
+                                        <td>슬라이스</td>
+                                    </tr>
+                                </table>
+                            </dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <!-- // girl -->
+                <ul id="best-video-cards" class="bestVideoCards" style="display: none;">
+                    <li>
+                        <div class="best-videos">
+                            <video src="https://nasmothumbnail.golfzon.com/new/2022/10/03/20/22/2337666_20221003202241.mp4"></video>
+                            <button class="xi-play-circle-o"></button>
+                        </div>
+                        <dl class="best-video-card">
+                            <dt>남성 유저 1</dt>
+                            <dd>
+                                2022.11.17
+                            </dd>
+                            <dd>
+                                <table>
+                                    <tr>
+                                        <th>드라이버</th>
+                                        <td>204.0m</td>
+                                    </tr>
+                                    <tr>
+                                        <th>모드</th>
+                                        <td>루키</td>
+                                    </tr>
+                                    <tr>
+                                        <th>구질</th>
+                                        <td>슬라이스</td>
+                                    </tr>
+                                </table>
+                            </dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="best-videos">
+                            <video src="https://nasmothumbnail.golfzon.com/new/2022/11/05/13/32/2898822_20221105133221.mp4"></video>
+                            <button class="xi-play-circle-o"></button>
+                        </div>
+                        <dl class="best-video-card">
+                            <dt>남성 유저 2</dt>
+                            <dd>
+                                2022.11.17
+                            </dd>
+                            <dd>
+                                <table>
+                                    <tr>
+                                        <th>드라이버</th>
+                                        <td>204.0m</td>
+                                    </tr>
+                                    <tr>
+                                        <th>모드</th>
+                                        <td>루키</td>
+                                    </tr>
+                                    <tr>
+                                        <th>구질</th>
+                                        <td>슬라이스</td>
+                                    </tr>
+                                </table>
+                            </dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <!-- man -->
+            </div>
+        </section>
+        <!-- // best-videos -->
+        <section id="another-videos">
+            <ul id="video-tabs" class="sub-tabs">
+                <li class="sub-tab-on">전체</li>
+                <li>베스트</li>
+                <li>피드</li>
+                <li>레슨</li>
+            </ul>
+            <div class="container">
+                <div id="another-tabs">
+                    <ul class="another-tab">
+                        <li class="another-tab-on">3개월</li>
+                        <li>6개월</li>
+                        <li>1년</li>
+                    </ul>
+
+                    <ul class="another-tab">
+                        <li class="another-tab-on">최신순</li>
+                        <li>좋아요순</li>
+                        <li>조회순</li>
+                        <li>댓글순</li>
+                    </ul>
+                </div>
+                <ul id="another-video">
+                    <li>
+                        <img src="https://nasmothumbnail.golfzon.com/new/2022/11/15/21/15/2348600_20221115211518_T0.jpg" alt="">
+                        <dl>
+                            <dt>웨지 <span>108m</span></dt>
+                            <dd>2022.11.18</dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="https://nasmothumbnail.golfzon.com/new/2022/11/15/21/15/2348600_20221115211518_T0.jpg" alt="">
+                        <dl>
+                            <dt>웨지 <span>108m</span></dt>
+                            <dd>2022.11.18</dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="https://nasmothumbnail.golfzon.com/new/2022/11/15/21/15/2348600_20221115211518_T0.jpg" alt="">
+                        <dl>
+                            <dt>웨지 <span>108m</span></dt>
+                            <dd>2022.11.18</dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="https://nasmothumbnail.golfzon.com/new/2022/11/15/21/15/2348600_20221115211518_T0.jpg" alt="">
+                        <dl>
+                            <dt>웨지 <span>108m</span></dt>
+                            <dd>2022.11.18</dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="https://nasmothumbnail.golfzon.com/new/2022/11/15/21/15/2348600_20221115211518_T0.jpg" alt="">
+                        <dl>
+                            <dt>웨지 <span>108m</span></dt>
+                            <dd>2022.11.18</dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="https://nasmothumbnail.golfzon.com/new/2022/11/15/21/15/2348600_20221115211518_T0.jpg" alt="">
+                        <dl>
+                            <dt>웨지 <span>108m</span></dt>
+                            <dd>2022.11.18</dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="https://nasmothumbnail.golfzon.com/new/2022/11/15/21/15/2348600_20221115211518_T0.jpg" alt="">
+                        <dl>
+                            <dt>웨지 <span>108m</span></dt>
+                            <dd>2022.11.18</dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="https://nasmothumbnail.golfzon.com/new/2022/11/15/21/15/2348600_20221115211518_T0.jpg" alt="">
+                        <dl>
+                            <dt>웨지 <span>108m</span></dt>
+                            <dd>2022.11.18</dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="https://nasmothumbnail.golfzon.com/new/2022/11/15/21/15/2348600_20221115211518_T0.jpg" alt="">
+                        <dl>
+                            <dt>웨지 <span>108m</span></dt>
+                            <dd>2022.11.18</dd>
+                            <dd>
+                                <dl>
+                                    <dt class="iconsax" icon-name="heart"></dt>
+                                    <dd>14</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="messages-2"></dt>
+                                    <dd>1</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="iconsax" icon-name="thick-arrow-right"></dt>
+                                    <dd>조회 645 회</dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <ul id="another-page">
+                    <li class="another-page-on">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+
+                <div id="another-search">
+                    <input type="search" placeholder="태그를 검색하여, 보고싶은 나스모를 볼 수 있습니다.">
+                    <button class="xi-search"></button>
+                </div>
+      
+            </div>
+        </section>
+        <!-- // another-videos -->
+    </main>
+    <footer>
+        <div class="container">
+            <ul id="footer-menu">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">창업센터</a></li>
+                <li><a href="#">광고제휴문의</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><strong>위치정보이용약관</strong></a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <div id="footer-bottom">
+                <div id="footer-left">
+                    <dl>
+                        <dt>고객센터</dt>
+                        <dd>골프존 1577-4333<br>
+                            필드부킹 1666-1619 [전화 문의 전 클릭]
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>서울본사</dt>
+                        <dd>서울특별시 강남구 영동대로 735 골프존타워서울<br>
+                            대표전화 1577-4333
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>대전사무소</dt>
+                        <dd>대전광역시 유성구 엑스포로 97번길 40<br>
+                            대표전화 1577-4333
+                        </dd>
+                    </dl>
+                </div>
+                <!-- //footer-left -->
+                <div id="footer-right">
+                    <ul id="footer-info">
+                        <li>
+                            <select name="" id="">
+                                <option value="">Family Site</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button>Global</button>
+                        </li>
+                        <li>
+                            <button>日本語</button>
+                        </li>
+                    </ul>
+                    <ul id="footer-btn">
+                        <li>
+                            <button>GLM 골프존 라이브 매니저</button>
+                        </li>
+                        <li>
+                            <button>GPM 골프존 파크 매니저</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //footer-right -->
+            </div>
+            <!-- //footer-bottom -->
+            <p id="copyright">사업자등록번호 122-87-00053 통신판매업신고번호 제2019-서울강남-01705호 [사업자정보확인] ㈜골프존 대표이사 박강수, 최덕형 Copyright &copy; GOLFZON. All rights reserved</p>
+        </div>
+        <!-- //container -->
+    </footer>
+    <!-- //footer -->
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://glenthemes.github.io/iconsax/geticons.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/smallMenu.js"></script>
+    <script src="js/subScroll.js"></script>
+    <script src="js/bestVideo.js"></script>
+</body>
+</html>

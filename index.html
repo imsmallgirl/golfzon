@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>골프존</title>
+    <link rel="stylesheet" href="css/common.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://glenthemes.github.io/iconsax/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="css/header.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="css/footer.css" media="screen and (min-width:1024px)">
+
+    <link rel="stylesheet" href="css/tablet/main.css" media="screen and (min-width:678px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/tablet/header.css" media="screen and (min-width:678px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/tablet/footer.css" media="screen and (min-width:678px) and (max-width: 1024px)">
+
+    <link rel="stylesheet" href="css/mobile/main.css" media="screen and (max-width:678px)">
+    <link rel="stylesheet" href="css/mobile/header.css" media="screen and (max-width:678px)">
+    <link rel="stylesheet" href="css/mobile/footer.css" media="screen and (max-width:678px)">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul id="top_header">
+                <li><a href="#" class="xi-user-o"></a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <!-- //top_header -->
+            <div id="bottom_header">
+                <button id="small-menu" class="xi-bars"></button>
+                <ul id="left_menu">
+                    <li><a href="/record.html">나의 기록실</a>
+                        <ul class="sub-menu">
+                            <li><a href="/record.html">스코어 카드</a></li>
+                            <li><a href="#">나의 나스모</a></li>
+                            <li><a href="#">나의 랭킹</a></li>
+                            <li><a href="#">트로피 진열장</a></li>
+                            <li><a href="#">홀인원 기록실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/media.html">미디어</a>
+                        <ul class="sub-menu">
+                            <li><a href="/media.html">베스트 나스모</a></li>
+                            <li><a href="#">스크린 골프존</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">대회</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">G-TOUR</a></li>
+                            <li><a href="#">골프존 파크 대회</a></li>
+                            <li><a href="#">대회 안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <h1><a href="/"><img src="images/header_logo.png" alt="골프존로고"></a></h2>
+                <ul id="right_menu">
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">코스소개</a></li>
+                    <li><a href="#">필드부킹</a></li>
+                </ul>
+            </div>
+            <!-- //bottom_header -->
+        </div>
+        <!-- // container -->
+        <div id="small_menus">
+            <div id="small_menu_container">
+                <ul id="small_menu_contents">
+                    <li>
+                        <a href="#" class="small-sub-tit">나의 기록실<span class="xi-angle-down-min"></span></a>
+                        <ul class="small_sub_menu">
+                            <li><a href="/record.html">스코어 카드</a></li>
+                            <li><a href="#">나의 나스모</a></li>
+                            <li><a href="#">나의 랭킹</a></li>
+                            <li><a href="#">트로피 진열장</a></li>
+                            <li><a href="#">홀인원 기록실</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="small-sub-tit">미디어<span class="xi-angle-down-min"></span></a>
+                        <ul class="small_sub_menu">
+                            <li><a href="#">베스트 나스모</a></li>
+                            <li><a href="#">스크린 골프존</a></li>
+                        </ul>
+                    </li>
+                    <li>                   
+                        <a href="#" class="small-sub-tit">대회<span class="xi-angle-down-min"></span></a>
+                        <ul class="small_sub_menu">
+                            <li><a href="#">G-TOUR</a></li>
+                            <li><a href="#">골프존 파크 대회</a></li>
+                            <li><a href="#">대회 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                    </li>
+                    <li>
+                        <a href="#">코스소개</a>
+                    </li>
+                    <li>
+                        <a href="#">필드부킹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <div id="sub-menu-bg"></div>
+    <main>
+        <section id="banner_wrap">
+            <ul id="ban_contents">
+                <li class="ban">
+                    <div class="container">
+                        <dl>
+                            <dt>
+                                골프존의 탄생<br>
+                                세상에 없던 골프를 만들다
+                            </dt>
+                            <dd>
+                                골프존은 ‘누구나 즐길 수 있는 골프’를 위해
+                                새롭게 생각하고 끊임없이 도전하여 
+                                세상에 없던 골프를 만듭니다.
+                            </dd>
+                        </dl>
+                        <img id="ban1-img" src="images/banner1.png" alt="배너1이미지">
+                    </div>
+                </li>
+                <li class="ban active">
+                    <div class="container">
+                        <dl>
+                            <dt>
+                                골프의 개념과<br>
+                                문화를 바꾸다
+                            </dt>
+                            <dd>
+                                스크린골프라는 세상에 없던 새로운 골프를
+                                창조한 골프존은
+                                '문화기업' 으로 성장하기 위해
+                                다방면에서의 변화를 모색했습니다.
+                            </dd>
+                        </dl>
+                        <img id="ban2-img" src="images/banner2 1.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <ul id="ban_btns">
+                <li class="xi-angle-left-thin"></li>
+                <li class="xi-angle-right-thin"></li>
+            </ul>
+        </section>
+        <!-- //banner section -->
+        <section id="golf-brands">
+            <div class="container">
+                <ul id="golf-brand">
+                    <li><img src="images/sec1-logo/golfzonpark.png" alt="골프존파크"></li>
+                    <li><img src="images/sec1-logo/screengolfzon.png" alt="스크린골프존"></li>
+                    <li><img src="images/sec1-logo/golfbuddy.png" alt="골프버디"></li>
+                    <li><img src="images/sec1-logo/golping.png" alt="골핑"></li>
+                    <li><img src="images/sec1-logo/golfzonmarket.png" alt="골프존마켓"></li>
+                    <li><img src="images/sec1-logo/gdr.png" alt="쥐디알"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="golfzon-screens">
+            <div class="container">
+                <h2>GOLFZON'S SCREEN</h2>
+                <p class="tit_text">다양한 골프존의 스크린 골프장을 찾아보세요.</p>
+                <div id="screens-items">
+                    <dl>
+                        <dt><img src="images/sec2-logo/ZSTRICT.png" alt="ZSTRICT"></dt>
+                        <dd>모든 실력 레벨의 골퍼들을 고려해,<br>
+                            다양한 미션을 전달하여<br>
+                            성공 시 상금과 포인트 리워드를 제공
+                        </dd>
+                        <dd><button>자세히 보기</button></dd>
+                    </dl>
+
+                    <dl>
+                        <dt><img src="images/sec2-logo/golfzon_park_img.png" alt="골프존마켓"></dt>
+                        <dd>가족과 친구, 골퍼와 비골퍼 등<br>
+                            남녀노소 누구나 골프를 즐길 수 있는<br>
+                            캐주얼한 공간
+                        </dd>
+                        <dd><button>자세히 보기</button></dd>
+                    </dl>
+
+                    <dl>
+                        <dt><img src="images/sec2-logo/golfzon_vision.png" alt="골프존마켓"></dt>
+                        <dd>다양한 게임 모드와 실제와 같은 그래픽으로<br>
+                            필드의 생생함을 플러스!
+                        </dd>
+                        <dd><button>자세히 보기</button></dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-course">
+            <div class="container">
+                <div id="course-head">
+                    <h2>NEW COURSE</h2>
+                    <p class="tit_text">
+                        골프존의 새로 출시된 코스를 미리 만나보세요!
+                    </p>
+                </div>
+                <ul id="course-slider-btn">
+                    <li class="xi-angle-left-thin"></li>
+                    <li class="xi-angle-right-thin"></li>
+                </ul>
+                <div id="course-contents">
+                    <div class="course">
+                        <dl id="course-tit">
+                            <dt>내장산 CC <span>전라도</span></dt>
+                            <dd><img src="images/nae.jpeg" alt="내장산CC"></dd>
+                        </dl>
+                        <!-- //course-tit -->
+                        <ul id="course-info">
+                            <li>
+                                코스 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                홀수
+                                <span>18홀</span>
+                            </li>
+                            <li>
+                                그린 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                총 거리
+                                <span>6,683m</span>
+                            </li>
+                        </ul>
+                        <!-- //course-info -->
+                        <p id="course-text">
+                            <span>국내 유일 국립 공원에 위치한 자연 그대로를 품은 골프장</span><br>
+                            매 홀 시시각각 변화하는 아름다운 풍경을 지닌 내장산 CC
+                        </p>
+                        <!-- //course-text -->
+                    </div>
+                    <!-- //course -->
+
+                    <div class="course">
+                        <dl id="course-tit">
+                            <dt>내장산 CC <span>전라도</span></dt>
+                            <dd><img src="images/nae.jpeg" alt="내장산CC"></dd>
+                        </dl>
+                        <!-- //course-tit -->
+                        <ul id="course-info">
+                            <li>
+                                코스 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                홀수
+                                <span>18홀</span>
+                            </li>
+                            <li>
+                                그린 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                총 거리
+                                <span>6,683m</span>
+                            </li>
+                        </ul>
+                        <!-- //course-info -->
+                        <p id="course-text">
+                            <span>국내 유일 국립 공원에 위치한 자연 그대로를 품은 골프장</span><br>
+                            매 홀 시시각각 변화하는 아름다운 풍경을 지닌 내장산 CC
+                        </p>
+                        <!-- //course-text -->
+                    </div>
+                    <!-- //course -->
+                    
+                    <div class="course">
+                        <dl id="course-tit">
+                            <dt>내장산 CC <span>전라도</span></dt>
+                            <dd><img src="images/nae.jpeg" alt="내장산CC"></dd>
+                        </dl>
+                        <!-- //course-tit -->
+                        <ul id="course-info">
+                            <li>
+                                코스 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                홀수
+                                <span>18홀</span>
+                            </li>
+                            <li>
+                                그린 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                총 거리
+                                <span>6,683m</span>
+                            </li>
+                        </ul>
+                        <!-- //course-info -->
+                        <p id="course-text">
+                            <span>국내 유일 국립 공원에 위치한 자연 그대로를 품은 골프장</span><br>
+                            매 홀 시시각각 변화하는 아름다운 풍경을 지닌 내장산 CC
+                        </p>
+                        <!-- //course-text -->
+                    </div>
+                    <!-- //course -->
+
+                    <div class="course">
+                        <dl id="course-tit">
+                            <dt>내장산 CC <span>전라도</span></dt>
+                            <dd><img src="images/nae.jpeg" alt="내장산CC"></dd>
+                        </dl>
+                        <!-- //course-tit -->
+                        <ul id="course-info">
+                            <li>
+                                코스 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                홀수
+                                <span>18홀</span>
+                            </li>
+                            <li>
+                                그린 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                총 거리
+                                <span>6,683m</span>
+                            </li>
+                        </ul>
+                        <!-- //course-info -->
+                        <p id="course-text">
+                            <span>국내 유일 국립 공원에 위치한 자연 그대로를 품은 골프장</span><br>
+                            매 홀 시시각각 변화하는 아름다운 풍경을 지닌 내장산 CC
+                        </p>
+                        <!-- //course-text -->
+                    </div>
+                    <!-- //course -->
+
+                    
+                    <div class="course">
+                        <dl id="course-tit">
+                            <dt>내장산 CC <span>전라도</span></dt>
+                            <dd><img src="images/nae.jpeg" alt="내장산CC"></dd>
+                        </dl>
+                        <!-- //course-tit -->
+                        <ul id="course-info">
+                            <li>
+                                코스 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                홀수
+                                <span>18홀</span>
+                            </li>
+                            <li>
+                                그린 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                총 거리
+                                <span>6,683m</span>
+                            </li>
+                        </ul>
+                        <!-- //course-info -->
+                        <p id="course-text">
+                            <span>국내 유일 국립 공원에 위치한 자연 그대로를 품은 골프장</span><br>
+                            매 홀 시시각각 변화하는 아름다운 풍경을 지닌 내장산 CC
+                        </p>
+                        <!-- //course-text -->
+                    </div>
+                    <!-- //course -->
+
+                    
+                    <div class="course">
+                        <dl id="course-tit">
+                            <dt>내장산 CC <span>전라도</span></dt>
+                            <dd><img src="images/nae.jpeg" alt="내장산CC"></dd>
+                        </dl>
+                        <!-- //course-tit -->
+                        <ul id="course-info">
+                            <li>
+                                코스 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                홀수
+                                <span>18홀</span>
+                            </li>
+                            <li>
+                                그린 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                총 거리
+                                <span>6,683m</span>
+                            </li>
+                        </ul>
+                        <!-- //course-info -->
+                        <p id="course-text">
+                            <span>국내 유일 국립 공원에 위치한 자연 그대로를 품은 골프장</span><br>
+                            매 홀 시시각각 변화하는 아름다운 풍경을 지닌 내장산 CC
+                        </p>
+                        <!-- //course-text -->
+                    </div>
+                    <!-- //course -->
+
+                    
+                    <div class="course">
+                        <dl id="course-tit">
+                            <dt>내장산 CC <span>전라도</span></dt>
+                            <dd><img src="images/nae.jpeg" alt="내장산CC"></dd>
+                        </dl>
+                        <!-- //course-tit -->
+                        <ul id="course-info">
+                            <li>
+                                코스 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                홀수
+                                <span>18홀</span>
+                            </li>
+                            <li>
+                                그린 난이도
+                                <ul>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                    <li class="xi-star"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                총 거리
+                                <span>6,683m</span>
+                            </li>
+                        </ul>
+                        <!-- //course-info -->
+                        <p id="course-text">
+                            <span>국내 유일 국립 공원에 위치한 자연 그대로를 품은 골프장</span><br>
+                            매 홀 시시각각 변화하는 아름다운 풍경을 지닌 내장산 CC
+                        </p>
+                        <!-- //course-text -->
+                    </div>
+                    <!-- //course -->
+                </div>
+                <!-- //course-contents -->
+                <p id="all-course"><a href="#">모든 코스 보기</a></p>
+            </div>
+        </section>
+        <!-- // new course -->
+        <div id="mid-banner"></div>
+        <!-- // mid-banner -->
+        <section id="golfzon-app">
+            <div class="container">
+                <ul id="app-imgs">
+                    <li class="app app-show">
+                        <dl id="appTexts">
+                            <dt>나의 홈 카드에서</dt>
+                            <dd><span>골프</span>의 모든 활동, 한눈에</dd>
+                        </dl>
+                        <ul id="appImgs">
+                            <li><img src="images/home1.png" alt="홈 앱1"></li>
+                        </ul>
+                    </li>
+                    <li class="app">
+                        <dl id="appTexts">
+                            <dt>나의 스크린 카드에서</dt>
+                            <dd><span>스크린</span>의 모든 기록, 한눈에</dd>
+                        </dl>
+                        <ul id="appImgs">
+                            <li><img src="images/score1.png" alt="스코어카드1"></li>
+                        </ul>
+                    </li>
+                    <li class="app">
+                        <dl id="appTexts">
+                            <dt>날짜와 지역만 선택하면</dt>
+                            <dd><span>필드</span>의 모든 정보와 예약, 한번에</dd>
+                        </dl>
+                        <ul id="appImgs">
+                            <li><img src="images/fuild1.png" alt="필드1"></li>
+                        </ul>
+                    </li>
+                    <li class="app">
+                        <dl id="appTexts">
+                            <dt>할인, 실시간 인기있는</dt>
+                            <dd><span>쇼핑</span>의 모든 즐거움, 한곳에</dd>
+                        </dl>
+                        <ul id="appImgs">
+                            <li><img src="images/shopping1.png" alt="쇼핑1"></li>
+                        </ul>
+                    </li>
+                    <li class="app">
+                        <dl id="appTexts">
+                            <dt>요즘 대세 골프 예능도</dt>
+                            <dd><span>골프</span>의 모든 재미, 한곳에</dd>
+                        </dl>
+                        <ul id="appImgs">
+                            <li><img src="images/media1.png" alt=미디어1"></li>
+                        </ul>
+                    </li>
+                    <li class="app">
+                        <dl id="appTexts">
+                            <dt>나의 홈 카드에서6</dt>
+                            <dd><span>골프</span>의 모든 활동, 한눈에</dd>
+                        </dl>
+                        <ul id="appImgs">
+                            <li><img src="images/home1.png" alt="홈 앱1"></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="app-menu">
+                    <div class="app-menu-head">
+                        <h2>GOLFZON APP</h2>
+                        <p class="tit_text">다양한 기능을 모바일 앱에서도 사용할 수 있어요!</p>
+                    </div>
+                    <div id="app-menus">
+                        <dl class="menu-on">
+                            <dt class="iconsax" icon-name="home-1"></dt>
+                            <dd>홈</dd>
+                        </dl>
+                        <dl>
+                            <dt class="iconsax" icon-name="video-1"></dt>
+                            <dd>스크린</dd>
+                        </dl>
+                        <dl>
+                            <dt class="iconsax" icon-name="tree"></dt>
+                            <dd>필드</dd>
+                        </dl>
+                        <dl>
+                            <dt class="iconsax" icon-name="shopping-cart"></dt>
+                            <dd>쇼핑</dd>
+                        </dl>
+                        <dl>
+                            <dt class="iconsax" icon-name="monitor-message"></dt>
+                            <dd>미디어</dd>
+                        </dl>
+                        <dl>
+                            <dt class="iconsax" icon-name="users"></dt>
+                            <dd>친구</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //golfzon app -->
+
+        <section id="golfzon-tour">
+            <div class="container">
+                <div id="tour-head">
+                    <h2>GOLFZON<br>TOURNAMENT</h2>
+                    <p class="tit_text">골프존에서 열리는 모든 대회를 참가해보세요!</p>
+                </div>
+                <ul id="tour-tab">
+                    <li class="tour_on">추천대회</li>
+                    <li>인기대회</li>
+                </ul>
+                <p id="all-tour"><a href="#">모든 대회 보기</a></p>
+                <ul id="tour-wrap">
+                    <li id="tour-contents">
+                        <dl>
+                            <dt>KB국민카드 스크린 골프대회</dt>
+                            <dd>2022-09-06 ~ 2022-10-23</dd>
+                            <dd><i class="iconsax" icon-name="flag-2"></i><span>36517</span> 라운드 진행</dd>
+                            <dd><i class="iconsax" icon-name="users"></i><span>18621</span> 명 참여</dd>
+                        </dl>
+                        <dl>
+                            <dt>KB국민카드 스크린 골프대회</dt>
+                            <dd>2022-09-06 ~ 2022-10-23</dd>
+                            <dd><i class="iconsax" icon-name="flag-2"></i><span>36517</span> 라운드 진행</dd>
+                            <dd><i class="iconsax" icon-name="users"></i><span>18621</span> 명 참여</dd>
+                        </dl>
+                        <dl>
+                            <dt>KB국민카드 스크린 골프대회</dt>
+                            <dd>2022-09-06 ~ 2022-10-23</dd>
+                            <dd><i class="iconsax" icon-name="flag-2"></i><span>36517</span> 라운드 진행</dd>
+                            <dd><i class="iconsax" icon-name="users"></i><span>18621</span> 명 참여</dd>
+                        </dl>
+                    </li>
+                    <li id="tour-contents">
+                        <dl>
+                            <dt>메밀꽃필무렵 봉평촌 11월 대회</dt>
+                            <dd>2022-11-01 ~ 2022-11-30</dd>
+                            <dd><i class="iconsax" icon-name="flag-2"></i><span>4257</span> 라운드 진행</dd>
+                            <dd><i class="iconsax" icon-name="users"></i><span>2199</span> 명 참여</dd>
+                        </dl>
+                        <dl>
+                            <dt>메밀꽃필무렵 봉평촌 11월 대회</dt>
+                            <dd>2022-11-01 ~ 2022-11-30</dd>
+                            <dd><i class="iconsax" icon-name="flag-2"></i><span>4257</span> 라운드 진행</dd>
+                            <dd><i class="iconsax" icon-name="users"></i><span>2199</span> 명 참여</dd>
+                        </dl>
+                        <dl>
+                            <dt>메밀꽃필무렵 봉평촌 11월 대회</dt>
+                            <dd>2022-11-01 ~ 2022-11-30</dd>
+                            <dd><i class="iconsax" icon-name="flag-2"></i><span>4257</span> 라운드 진행</dd>
+                            <dd><i class="iconsax" icon-name="users"></i><span>2199</span> 명 참여</dd>
+                        </dl>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <!-- //golfzon-tour -->
+
+        <section id="golfzon-event">
+            <div class="container">
+                <div id="event-head">
+                    <h2>GOLFZON EVENT</h2>
+                    <p class="tit_text">골프존의 다양한 혜택과 소식을 만나보세요!</p>
+                </div>
+                <!-- //event-head -->
+                <div id="event-notice">
+                    <div id="event">
+                        <p id="all-event"><a href="#">전체 이벤트 보기</a></p>
+                        <ul id="event-imgs">
+                            <li class="event-off"><img src="images/event1.jpg" alt="이벤트1"></li>
+                            <li><img src="images/event2.jpg" alt="이벤트2"></li>
+                            <li><img src="images/event3.jpg" alt="이벤트3"></li>
+                            <li><img src="images/event4.png" alt="이벤트4"></li>
+                        </ul>
+                        <ul id="event-tabs">
+                            <li class="event_on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <!-- // event -->
+                    <div id="notice">
+                        <p id="all-notice"><a href="#">전체 공지 보기</a></p>
+                        <div id="notice-contents">
+                            <dl>
+                                <dt>
+                                    <span>대회</span><br>
+                                    빈폴 스크린 골프 대회
+                                </dt>
+                                <dd>
+                                    빈폴 스크린 골프대회 대회요강...
+                                </dd>
+                                <dd>2022.10.14</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span class="no-red">알림</span><br>
+                                    [정기점검] 2022년 10월 18일...
+                                </dt>
+                                <dd>
+                                    점검일시 : 2022년 10월 18일 (화)...
+                                </dd>
+                                <dd>2022.10.13</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span>대회</span><br>
+                                    전라북도 골프협회장배 스크린...
+                                </dt>
+                                <dd>
+                                    대회요강 1.참가자격 - 2022년 10월...
+                                </dd>
+                                <dd>2022.10.13</dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <span class="no-yellow">이벤트</span><br>
+                                    [당첨자발표] G멤버십 페스티벌...
+                                </dt>
+                                <dd>
+                                    안녕하세요. 골프존입니다. G멤버십...
+                                </dd>
+                                <dd>2022.10.11</dd>
+                            </dl>
+                        </div>
+                        <!-- // notice-contents -->
+                    </div>
+                    <!-- // notice -->
+                </div>
+                <!-- // event-notice -->
+            </div>
+            <!-- //container -->
+        </section>
+        <!-- // golfzon-event -->
+    </main>
+    <footer>
+        <div class="container">
+            <ul id="footer-menu">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">창업센터</a></li>
+                <li><a href="#">광고제휴문의</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><strong>위치정보이용약관</strong></a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <div id="footer-bottom">
+                <div id="footer-left">
+                    <dl>
+                        <dt>고객센터</dt>
+                        <dd>골프존 1577-4333<br>
+                            필드부킹 1666-1619 [전화 문의 전 클릭]
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>서울본사</dt>
+                        <dd>서울특별시 강남구 영동대로 735 골프존타워서울<br>
+                            대표전화 1577-4333
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>대전사무소</dt>
+                        <dd>대전광역시 유성구 엑스포로 97번길 40<br>
+                            대표전화 1577-4333
+                        </dd>
+                    </dl>
+                </div>
+                <!-- //footer-left -->
+                <div id="footer-right">
+                    <ul id="footer-info">
+                        <li>
+                            <select name="" id="">
+                                <option value="">Family Site</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button>Global</button>
+                        </li>
+                        <li>
+                            <button>日本語</button>
+                        </li>
+                    </ul>
+                    <ul id="footer-btn">
+                        <li>
+                            <button>GLM 골프존 라이브 매니저</button>
+                        </li>
+                        <li>
+                            <button>GPM 골프존 파크 매니저</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //footer-right -->
+            </div>
+            <!-- //footer-bottom -->
+            <p id="copyright">사업자등록번호 122-87-00053 통신판매업신고번호 제2019-서울강남-01705호 [사업자정보확인] ㈜골프존 대표이사 박강수, 최덕형 Copyright &copy; GOLFZON. All rights reserved</p>
+        </div>
+        <!-- //container -->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://glenthemes.github.io/iconsax/geticons.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/appMenu.js"></script>
+    <script src="js/courseSlider.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/tour.js"></script>
+    <script src="js/smallMenu.js"></script>
+    <script src="js/subScroll.js"></script>
+</body>
+</html>

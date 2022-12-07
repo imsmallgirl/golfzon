@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>골프존 | 나의 기록실 | 스코어카드</title>
+    <link rel="stylesheet" href="css/common.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://glenthemes.github.io/iconsax/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="css/header.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="css/footer.css" media="screen and (min-width:1024px)">
+
+    <link rel="stylesheet" href="css/tablet/main.css" media="screen and (min-width:678px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/tablet/header.css" media="screen and (min-width:678px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/tablet/footer.css" media="screen and (min-width:678px) and (max-width: 1024px)">
+
+    <link rel="stylesheet" href="css/mobile/main.css" media="screen and (max-width:678px)">
+    <link rel="stylesheet" href="css/mobile/header.css" media="screen and (max-width:678px)">
+    <link rel="stylesheet" href="css/mobile/footer.css" media="screen and (max-width:678px)">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul id="top_header">
+                <li><a href="#" class="xi-user-o"></a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <!-- //top_header -->
+            <div id="bottom_header">
+                <button id="small-menu" class="xi-bars"></button>
+                <ul id="left_menu">
+                    <li><a href="/record.html">나의 기록실</a>
+                        <ul class="sub-menu">
+                            <li><a href="/record.html">스코어 카드</a></li>
+                            <li><a href="#">나의 나스모</a></li>
+                            <li><a href="#">나의 랭킹</a></li>
+                            <li><a href="#">트로피 진열장</a></li>
+                            <li><a href="#">홀인원 기록실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/media.html">미디어</a>
+                        <ul class="sub-menu">
+                            <li><a href="/media.html">베스트 나스모</a></li>
+                            <li><a href="#">스크린 골프존</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">대회</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">G-TOUR</a></li>
+                            <li><a href="#">골프존 파크 대회</a></li>
+                            <li><a href="#">대회 안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <h1><a href="/"><img src="images/header_logo.png" alt="골프존로고"></a></h2>
+                <ul id="right_menu">
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">코스소개</a></li>
+                    <li><a href="#">필드부킹</a></li>
+                </ul>
+            </div>
+            <!-- //bottom_header -->
+        </div>
+        <!-- // container -->
+        <div id="small_menus">
+            <div id="small_menu_container">
+                <ul id="small_menu_contents">
+                    <li>
+                        <a href="#" class="small-sub-tit">나의 기록실<span class="xi-angle-down-min"></span></a>
+                        <ul class="small_sub_menu">
+                            <li><a href="/record.html">스코어 카드</a></li>
+                            <li><a href="#">나의 나스모</a></li>
+                            <li><a href="#">나의 랭킹</a></li>
+                            <li><a href="#">트로피 진열장</a></li>
+                            <li><a href="#">홀인원 기록실</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="small-sub-tit">미디어<span class="xi-angle-down-min"></span></a>
+                        <ul class="small_sub_menu">
+                            <li><a href="./media.html">베스트 나스모</a></li>
+                            <li><a href="#">스크린 골프존</a></li>
+                        </ul>
+                    </li>
+                    <li>                   
+                        <a href="#" class="small-sub-tit">대회<span class="xi-angle-down-min"></span></a>
+                        <ul class="small_sub_menu">
+                            <li><a href="#">G-TOUR</a></li>
+                            <li><a href="#">골프존 파크 대회</a></li>
+                            <li><a href="#">대회 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                    </li>
+                    <li>
+                        <a href="#">코스소개</a>
+                    </li>
+                    <li>
+                        <a href="#">필드부킹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <div id="sub-menu-bg"></div>
+    <main>
+        <section id="record_header">
+            <dl id="record_sub_header">
+                <dt>나의 기록실</dt>
+                <dd id="record_subTit">스코어카드</dd>
+            </dl>
+            <ul id="record_tabs">
+                <li class="record_tab_on">스코어카드</li>
+                <li>나의 나스모</li>
+                <li>나의 랭킹</li>
+                <li>트로피 진열장</li>
+                <li>홀인원 기록실</li>
+            </ul>
+        </section>
+        <section id="record_card">
+            <div class="container">
+                <div id="record_card_bg">
+                    <div id="score_card">
+                        <dl class="record_tit">
+                            <dt>스코어카드</dt>
+                            <dd>나의 스코어 카드를 확인하시고, 상세 분석을 해보세요!</dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <p><img src="images/sub1/teeshot3.png" alt="최대 퍼팅 거리"></p>
+                                <dl>
+                                    <dt>최대 퍼팅거리</dt>
+                                    <dd><span>19.8</span>M</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p><img src="images/sub1/score.png" alt="최고 스코어"></p>
+                                <dl>
+                                    <dt>최고 스코어</dt>
+                                    <dd><span>92</span>타</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p><img src="images/sub1/teeshot.png" alt="최대 티샷거리"></p>
+                                <dl>
+                                    <dt>최대 티샷거리</dt>
+                                    <dd><span>226</span>M</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //score_card -->
+                    <div id="average">
+                        <div>
+                            <dl class="record_tit">
+                                <dt>평균 성적 분석</dt>
+                                <dd>최근 5경기 기준으로 분석됩니다.</dd>
+                            </dl>
+                            <button>추이 그래프 보기</button>
+                        </div>
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dt>평균 타수</dt>
+                                    <dd><span>105</span>타</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>평균 비거리</dt>
+                                    <dd><span>131</span>M</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>평균 퍼팅수</dt>
+                                    <dd><span>1.81</span>타</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>페어웨이 안착률</dt>
+                                    <dd><span>58.57</span>%</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>그린 적중률</dt>
+                                    <dd><span>10</span>%</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //record_card_bg -->
+            </div>
+        </section>
+        <!-- //record_card -->
+        <section id="game">
+            <ul id="game-tabs" class="sub-tabs">
+                <li class="sub-tab-on">전체경기</li>
+                <li>일반경기</li>
+                <li>대회경기</li>
+            </ul>
+            <div class="container">
+                <div id="game-contents">
+                    <table id="game-contents">
+                        <thead>
+                            <tr>
+                                <th>날짜</th>
+                                <th>구분</th>
+                                <th>장소</th>
+                                <th>골프코스</th>
+                                <th>홀</th>
+                                <th>타수<span>(점수)</span></th>
+                                <th>상세</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td>2022<br><strong>10.16</strong></td>
+                            <td>일반<br>아마추어</td>
+                            <td>[경기광주]중대동</td>
+                            <td><strong>레이크우드 CC</strong></td>
+                            <td>F</td>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tbody>
+                        <tbody>
+                            <td>2022<br><strong>10.16</strong></td>
+                            <td>일반<br>아마추어</td>
+                            <td>[경기광주]중대동</td>
+                            <td><strong>레이크우드 CC</strong></td>
+                            <td>F</td>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tbody>
+                        <tbody>
+                            <td>2022<br><strong>10.16</strong></td>
+                            <td>일반<br>아마추어</td>
+                            <td>[경기광주]중대동</td>
+                            <td><strong>레이크우드 CC</strong></td>
+                            <td>F</td>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tbody>
+                        <tbody>
+                            <td>2022<br><strong>10.16</strong></td>
+                            <td>일반<br>아마추어</td>
+                            <td>[경기광주]중대동</td>
+                            <td><strong>레이크우드 CC</strong></td>
+                            <td>F</td>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tbody>
+                        <tbody>
+                            <td>2022<br><strong>10.16</strong></td>
+                            <td>일반<br>아마추어</td>
+                            <td>[경기광주]중대동</td>
+                            <td><strong>레이크우드 CC</strong></td>
+                            <td>F</td>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //game-contents -->
+                <div id="game-contents2">
+                    <table>
+                        <tr>
+                            <th>날짜</th>
+                            <td>2022 <strong>10.16</strong></td>
+                        </tr>
+                        <tr>
+                            <th>구분</th>
+                            <td>일반 아마추어</td>
+                        </tr>
+                        <tr>
+                            <th>장소</th>
+                            <td>[경기광주]중대동</td>
+                        </tr>
+                        <tr>
+                            <th>골프코스</th>
+                            <td><strong>레이크우드 CC</strong></td>
+                        </tr>
+                        <tr>
+                            <th>홀</th>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <th>타수<span>(점수)</span></th>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                        </tr>
+                        <tr>
+                            <th>상세</th>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>날짜</th>
+                            <td>2022 <strong>10.16</strong></td>
+                        </tr>
+                        <tr>
+                            <th>구분</th>
+                            <td>일반 아마추어</td>
+                        </tr>
+                        <tr>
+                            <th>장소</th>
+                            <td>[경기광주]중대동</td>
+                        </tr>
+                        <tr>
+                            <th>골프코스</th>
+                            <td><strong>레이크우드 CC</strong></td>
+                        </tr>
+                        <tr>
+                            <th>홀</th>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <th>타수<span>(점수)</span></th>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                        </tr>
+                        <tr>
+                            <th>상세</th>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>날짜</th>
+                            <td>2022 <strong>10.16</strong></td>
+                        </tr>
+                        <tr>
+                            <th>구분</th>
+                            <td>일반 아마추어</td>
+                        </tr>
+                        <tr>
+                            <th>장소</th>
+                            <td>[경기광주]중대동</td>
+                        </tr>
+                        <tr>
+                            <th>골프코스</th>
+                            <td><strong>레이크우드 CC</strong></td>
+                        </tr>
+                        <tr>
+                            <th>홀</th>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <th>타수<span>(점수)</span></th>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                        </tr>
+                        <tr>
+                            <th>상세</th>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>날짜</th>
+                            <td>2022 <strong>10.16</strong></td>
+                        </tr>
+                        <tr>
+                            <th>구분</th>
+                            <td>일반 아마추어</td>
+                        </tr>
+                        <tr>
+                            <th>장소</th>
+                            <td>[경기광주]중대동</td>
+                        </tr>
+                        <tr>
+                            <th>골프코스</th>
+                            <td><strong>레이크우드 CC</strong></td>
+                        </tr>
+                        <tr>
+                            <th>홀</th>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <th>타수<span>(점수)</span></th>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                        </tr>
+                        <tr>
+                            <th>상세</th>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>날짜</th>
+                            <td>2022 <strong>10.16</strong></td>
+                        </tr>
+                        <tr>
+                            <th>구분</th>
+                            <td>일반 아마추어</td>
+                        </tr>
+                        <tr>
+                            <th>장소</th>
+                            <td>[경기광주]중대동</td>
+                        </tr>
+                        <tr>
+                            <th>골프코스</th>
+                            <td><strong>레이크우드 CC</strong></td>
+                        </tr>
+                        <tr>
+                            <th>홀</th>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <th>타수<span>(점수)</span></th>
+                            <td>106타<span class="game-score">(+34점)</span></td>
+                        </tr>
+                        <tr>
+                            <th>상세</th>
+                            <td><span class="game-plus">상세보기</span></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <ul id="game-page">
+                    <li class="game-page-on">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>                           
+            </div>
+        </section>
+        <!-- //game -->
+    </main>
+    <footer>
+        <div class="container">
+            <ul id="footer-menu">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">창업센터</a></li>
+                <li><a href="#">광고제휴문의</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><strong>위치정보이용약관</strong></a></li>
+                <li><a href="#">법적고지</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <div id="footer-bottom">
+                <div id="footer-left">
+                    <dl>
+                        <dt>고객센터</dt>
+                        <dd>골프존 1577-4333<br>
+                            필드부킹 1666-1619 [전화 문의 전 클릭]
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>서울본사</dt>
+                        <dd>서울특별시 강남구 영동대로 735 골프존타워서울<br>
+                            대표전화 1577-4333
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>대전사무소</dt>
+                        <dd>대전광역시 유성구 엑스포로 97번길 40<br>
+                            대표전화 1577-4333
+                        </dd>
+                    </dl>
+                </div>
+                <!-- //footer-left -->
+                <div id="footer-right">
+                    <ul id="footer-info">
+                        <li>
+                            <select name="" id="">
+                                <option value="">Family Site</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button>Global</button>
+                        </li>
+                        <li>
+                            <button>日本語</button>
+                        </li>
+                    </ul>
+                    <ul id="footer-btn">
+                        <li>
+                            <button>GLM 골프존 라이브 매니저</button>
+                        </li>
+                        <li>
+                            <button>GPM 골프존 파크 매니저</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //footer-right -->
+            </div>
+            <!-- //footer-bottom -->
+            <p id="copyright">사업자등록번호 122-87-00053 통신판매업신고번호 제2019-서울강남-01705호 [사업자정보확인] ㈜골프존 대표이사 박강수, 최덕형 Copyright &copy; GOLFZON. All rights reserved</p>
+        </div>
+        <!-- //container -->
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://glenthemes.github.io/iconsax/geticons.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/smallMenu.js"></script>
+    <script src="js/subScroll.js"></script>
+</body>
+</html>
